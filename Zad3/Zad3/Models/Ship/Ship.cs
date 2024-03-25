@@ -1,10 +1,11 @@
 ﻿using System.Collections;
 
+
 namespace Zad3.Models.Ship;
 
 public class Ship
 {
-    public ArrayList CargoList { get; }
+    public List<ContainerBase.ContainerBase> CargoList;  
     
     protected double Speed { get; set; }
 
@@ -12,13 +13,15 @@ public class Ship
     
     protected double MaxContainerWeight { get; set; }
 
-    Ship(double speed, int maxContainerCount, double maxContainerWeight)
+    internal Ship(double speed, int maxContainerCount, double maxContainerWeight)
     {
         Speed = speed;
 
         MaxContainerCount = maxContainerCount;
 
         MaxContainerWeight = maxContainerWeight;
+
+        CargoList = new List<ContainerBase.ContainerBase>();
     }
 
 

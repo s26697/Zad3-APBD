@@ -1,10 +1,8 @@
 ﻿namespace Zad3.Models;
 
-public class ContainerG : ContainerBase
+public class ContainerG : ContainerBase.ContainerBase
 {
-
-     
-    ContainerG(double maxWeight, double baseWeight, double weight, double height, double depth) 
+    internal ContainerG(double maxWeight, double baseWeight, double weight, double height, double depth) 
         : base( maxWeight,  baseWeight , weight,  height,  depth) 
     {
         Flag = "G";

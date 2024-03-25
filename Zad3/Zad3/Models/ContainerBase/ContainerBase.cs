@@ -1,4 +1,4 @@
-﻿namespace Zad3.Models;
+﻿namespace Zad3.Models.ContainerBase;
 
 public abstract class ContainerBase
 {
